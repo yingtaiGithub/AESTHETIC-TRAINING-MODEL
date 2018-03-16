@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'dismecha';
+  src: url('font/dismecha.ttf'); /* IE9 Compat Modes */
+}
+
+@font-face {
+  font-family: 'favorit_light';
+  src: url('font/Favorit_Light.ttf'); /* IE9 Compat Modes */
+}
+
+body {
+    background-color: #909095;
+    margin: 60px 0px;
+}
+
+#leftPanel {
+    padding-left:50px;
+}
+
+.title {
+    font-family: 'dismecha';
+    font-size: 90px;
+    padding-top: 60px;
+    line-height: 95%;
+    color: #696867
+}
+.generate {
+    width: 100%
+    height: 10%;
+    font-size: 20px;
+    margin: 40px 0px;
+}
+
+.generate button {
+    width: 100%;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #bfbebd;
+    color: #5b5959;
+    border: none;
+    box-shadow: 10px 8px 60px 0 rgba(0,0,0,0.5), 10px 0px 50px 0 rgba(0,0,0,0.1);
+    outline: none;
+}
+
+.description {
+    padding-top: 20px;
+    font-size: 19px;
+    color: #616060;
+    width: 95%;
+    line-height: 160%;
+}
+
+#bracket {
+    height: 100%;
+    position: relative;
+}
+
+#bracket img {
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+#rightPanel {
+    height: 90%;
+    position: relative;
+    margin-top: 30px;
+}
+
+.double-border {
+    width: 50px;
+    height: 50px;
+}
+
+.left-up{
+    position: absolute;
+    left:0;
+    top: 0;
+    border-left: solid 5px #747478;
+    border-top: solid 5px #747478;
+}
+
+.left-down{
+    position: absolute;
+    left:0;
+    bottom: 0;
+    border-left: solid 5px #747478;
+    border-bottom: solid 5px #747478;
+}
+
+.right-up{
+    position: absolute;
+    right:0;
+    top: 0;
+    border-right: solid 5px #747478;
+    border-top: solid 5px #747478;
+}
+
+.right-down{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    border-right: solid 5px #747478;
+    border-bottom: solid 5px #747478;
+}
+
+#graph {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    letter-spacing: 3px;
+}
+
+#click_text {
+    display: none;
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    font-size: 20px;
+    color: #747478;
+    cursor: pointer;
+}
+
+#after_generation {
+    height: 100%;
+    display: none;
+}
+#after_generation .title {
+    font-size: 30px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding-top: 60%;
+}
+
+#after_generation button {
+    width: 40%;
+}
+
+#after_generation .description {
+    color: #c7c6c5;
+    font-size: 30px;
+    font-family: favorit_light;
+    cursor: pointer;
+}
+
+#after_generation .generate {
+    margin: 80px 0;
+}

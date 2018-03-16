@@ -1,0 +1,62 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="app.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+        <script src="sketch.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="leftPanel" class="col-sm-4">
+                <div id="before_generation">
+                    <div class="title">
+                        <p class="stretch">AUTO</p>
+                        <p class="stretch">GRAP</p>
+                        <p class="stretch">HIC</p>
+                    </div>
+                    <div class="generate">
+                        <button>Generate</button>
+                    </div>
+                    <div class="description">
+                        Click to generate a poster from an initially randomised process. Choose if the generated output is aesthetically pleasing. Your vote shapes the future behaviour of the generative algorithm. The algorithm learns to improve the output overtime and learns to optimise its design.
+                    </div>
+                </div>
+
+                <div id="after_generation">
+                    <div class="title">
+                        Please vote.<br>Is this iteration<br>aesthetically<br>pleasing?
+                    </div>
+                    <div class="generate">
+                        <button>Yes</button>
+                        <button>No</button>
+                    </div>
+                    <div class="description">
+                        Make another.
+                    </div>
+                </div>
+            </div>
+            <div id="bracket" class="col-sm-2">
+                <img src="image/Bracket.png">
+            </div>
+            <div id="rightPanel" class="col-md-6">
+                <div class="double-border left-up"></div>
+                <div class="double-border left-down"></div>
+                <div class="double-border right-up"></div>
+                <div class="double-border right-down"></div>
+                <div id="graph">
+                </div>
+                <div id="click_text">
+                    Click to download
+                </div>
+
+            </div>
+
+        </div>
+
+    </body>
+</html>
