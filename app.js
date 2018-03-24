@@ -68,7 +68,7 @@ $( document ).ready(function() {
 //                p.rect(10, 10, 10, 10);
 //                p.stroke(204, 101, 192, 127);
 
-                for (y=30; y<height-text_size-30; y+=20){
+                for (y=30; y<height-text_size-20; y+=20){
                     above_exist = false
                     for (x=30; x<width-20-text_size; x+=20) {
                         var placable = true;
@@ -99,6 +99,7 @@ $( document ).ready(function() {
                                 break;
                             }
 
+                        }
 
                         if (placable) {
 //                            console.log(x,y)
@@ -108,7 +109,7 @@ $( document ).ready(function() {
                             if (title_text[index] == "C" || title_text[index] == "I" ) {
                                 x = x + text_size*0.1;
                             } else {
-                                x = x + text_size + letter_spacing;
+                                x = x + text_size + letter_spacing-20;
                             }
                             above_exist = true;
 
@@ -117,16 +118,20 @@ $( document ).ready(function() {
                                 y = height;
                             }
                         }
+
+
                     }
 
                     if (above_exist){
                         y = y + text_size - 20;
                     }
-                }
 
 
+                };
             };
-        };
+        }
+
+        console.log("b")
         var myp5 = new p5(sketch);
 
         setTimeout(function(){
@@ -134,6 +139,7 @@ $( document ).ready(function() {
             $("#after_generation").css('display', 'block');
             $("#click_text").css('display', 'block');
         }, 1500);
+
     })
 
     $('.stretch').each(function(){
